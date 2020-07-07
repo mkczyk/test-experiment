@@ -1,6 +1,8 @@
 # test-experiment
 test333
 
+<base href="https://rawcdn.githack.com">
+
 [index.html](index.html)
 
 
