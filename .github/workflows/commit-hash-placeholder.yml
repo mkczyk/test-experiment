@@ -5,14 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    
+    - name: Declare SHA variable
+      run: |
+          echo "::set-output name=sha::$(git rev-parse HEAD)"
+          
     - name: Find and Replace
       uses: shitiomatic/str-replace@master
       with:
         find: "{current-commit-id}"
-        replace: $(git rev-parse HEAD)
+        replace: ${{ steps.vars.outputs.sha }}
         include: "(?i).*\\.md$"
 
-    - name: Another step
-      run: |
-        echo "a: ${{ $(git rev-parse HEAD) }}"
-        echo "b: \"$(git rev-parse HEAD)\""
+
