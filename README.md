@@ -1,9 +1,11 @@
 # test-experiment
-test1
+test2
 
 ### This
 
 File: [index.html](index.html)
+
+SHA: {current-commit-id}
 
 Demo:
 
