@@ -11,3 +11,10 @@ jobs:
         find: "{current-commit-id}"
         replace: $(git rev-parse HEAD)
         include: "(?i).*\\.md$"
+
+    - name: Another step
+      run: |
+        echo "a: $(git rev-parse HEAD)"
+        echo "b: ${{ $(git rev-parse HEAD) }}"
+        echo "c: $(git rev-parse HEAD)"
+        echo "d: \"$(git rev-parse HEAD)\""
