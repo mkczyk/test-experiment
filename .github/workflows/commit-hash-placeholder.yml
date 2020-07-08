@@ -10,4 +10,4 @@ jobs:
       with:
         find: "{current-commit-id}"
         replace: $(git rev-parse HEAD)
-        include: "*.md"
+        include: "(?i).*\\.md$"
