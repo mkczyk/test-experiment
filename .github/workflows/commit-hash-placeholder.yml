@@ -36,3 +36,20 @@ jobs:
 #         include: "(?i).*\\.md$"
 
 
+
+# https://regex-golang.appspot.com/assets/html/index.html
+# https://github.com/marketplace/actions/variables-in-markdown
+
+# https://github.com/marketplace/actions/replace-string
+# https://github.com/frabert/replace-string-action
+# (not filter for files)
+
+# https://github.com/marketplace/actions/string-replace
+# https://github.com/shitiomatic/str-replace
+# (copt)
+
+# https://github.com/marketplace/actions/find-and-replace
+# https://github.com/jacobtomlinson/gha-find-replace
+# (good)
+
+# pull request: https://github.com/jacobtomlinson/gha-find-replace/issues/1
