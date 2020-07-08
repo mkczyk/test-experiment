@@ -11,7 +11,8 @@ jobs:
       shell: bash
       run: |
           echo "::set-output name=sha::$(git rev-parse HEAD)"
-          echo "sha: ${{ steps.vars.outputs.sha }}"
+          echo "sha a: ${{ steps.vars.outputs.sha }}"
+          echo "sha b: $(git rev-parse HEAD)"
           
     - name: Find and Replace
       uses: shitiomatic/str-replace@master
