@@ -37,12 +37,3 @@ jobs:
         
     - name: HTML Preview
       uses: pavi2410/html-preview-action@v2
-    
-  markdown:
-    name: markdown-marker
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: bdougie/variables-in-markdown@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
