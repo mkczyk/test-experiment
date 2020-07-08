@@ -6,30 +6,18 @@ jobs:
     steps:
     - uses: actions/checkout@master
      
-    - name: Declare some variables
+    - name: Declare SHA variable
       id: vars
       shell: bash
       run: |
-        echo "::set-output name=sha_short::$(git rev-parse HEAD)"
-        echo "Sha: ${{ steps.vars.outputs.sha_short }}"
-
-    - name: Another step
-      run: |
-        echo "Sha: ${{ steps.vars.outputs.sha_short }}"
-    
-    - name: Declare SHA variable
-      id: vars2
-      shell: bash
-      run: |
-          echo "aaa"
-          echo "::set-output name=sha1::$(git rev-parse HEAD)"
-          echo "sha: ${{ steps.vars.outputs.sha1 }}"
+          echo "::set-output name=sha::$(git rev-parse HEAD)"
+          echo "sha: ${{ steps.vars.outputs.sha }}"
           
     - name: Find and Replace
       uses: shitiomatic/str-replace@master
       with:
         find: "{current-commit-id}"
-        replace: "${{ steps.vars.outputs.sha1 }}"
+        replace: "${{ steps.vars.outputs.sha }}"
         include: "(?i).*\\.md$"
 
 
