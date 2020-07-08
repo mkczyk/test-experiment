@@ -1,21 +1,28 @@
 # test-experiment
 test333
 
-<base href="https://rawcdn.githack.com">
-
-[index.html](index.html)
 
 
-https://github.com/mkczyk/test-experiment/blob/master/index.html
-
-Demo of this:
-
-https://rawgit.com/mkczyk/test-experiment/cf4941b1de1bd4e90519ea5cc862506152dde365/index.html
-
-https://htmlpreview.github.io/?https://github.com/mkczyk/test-experiment/blob/cf4941b1de1bd4e90519ea5cc862506152dde365/index.html
 
 
-Demo lastest:
+### This
+
+File: [index.html](index.html)
+
+Demo:
+
+https://rawcdn.githack.com/mkczyk/test-experiment/{current-commit-id}/index.html
+
+https://rawgit.com/mkczyk/test-experiment/{current-commit-id}/index.html
+
+https://htmlpreview.github.io/?https://github.com/mkczyk/test-experiment/blob/{current-commit-id}/index.html
+
+
+### Lastest
+
+File: https://github.com/mkczyk/test-experiment/blob/master/index.html
+
+Demo:
 
 https://rawcdn.githack.com/mkczyk/test-experiment/master/index.html
 
