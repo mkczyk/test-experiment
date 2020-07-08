@@ -5,8 +5,8 @@ title: New Issue
 labels: bug, enhancement
 ---
 <!--#
-NOUN=mother
-ATTRIBUTION=Mark Wahlberg
+NOUN=aaa
+ATTRIBUTION=bbb
 $-->
 
 "Say hi to your {{ NOUN }} for me," {{ ATTRIBUTION }}
